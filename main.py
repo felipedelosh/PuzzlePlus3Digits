@@ -97,7 +97,7 @@ class Software:
    def isFindPuzzle(self, sum):
       result = self.converAResultIn3Digits(sum)
       if len(result) == 3:
-         if result[0] == result[1] == result[2]:
+         if result[0] == result[1] == result[2] == self.numbers["C"]:
             print("Encontre la respuesta: ", result)
             self.resolvePuzzle = True
       
